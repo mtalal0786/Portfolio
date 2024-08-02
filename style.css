@@ -391,6 +391,22 @@ span{
         font-size: 2rem;
         margin: 3rem 0;
     }
+    .social-media{
+      display: flex;
+      justify-content: center;
+
+    }
+    .dwn-btn{
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        margin-right: 50px;
+        font-weight: bold;
+        font-size: medium;
+    }
+    .para{
+        text-align: center;
+    }
     .home{
         flex-direction: column;
     }
@@ -406,6 +422,10 @@ span{
     }
     .about{
         flex-direction: column-reverse;
+    }
+    .about-content .heading,.about-content h3{
+        display: flex;
+        justify-content: center;
     }
     .about img{
         width: 70vw;
