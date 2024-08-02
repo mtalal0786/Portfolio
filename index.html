@@ -29,17 +29,17 @@
             <h3>Hallo,It's Me</h3>
             <h1>Muhammad <span>Talal</span></h1>
             <h3>and I'm a <span class="multiple-text">Frontend Develpor</span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Quidem animi nesciunt ad sapiente eveniet laboriosam illo 
                 magni laborum nihil. Dolorem?</p>
             <div class="social-media">
-                <a href="#"><i class='bx bxl-facebook' ></i></a>
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
-                <a href="#"><i class='bx bxl-github' ></i></a>
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://www.facebook.com/talal.shahbaz.969"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/talal.ch.7165/"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://github.com/mtalal0786"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/muhammad-talal-258262296/"><i class='bx bxl-linkedin' ></i></a>
                 
             </div>
-            <a href="https://drive.google.com/file/d/1U20oJ9wPenDhS0BWAv9Y8ttZ3QnmSecb/view?usp=sharing" class="btn">Download CV</a>
+            <a href="https://drive.google.com/file/d/1U20oJ9wPenDhS0BWAv9Y8ttZ3QnmSecb/view?usp=sharing" class="btn dwn-btn">Download CV</a>
         </div>
 
         <div class="home-image">
@@ -56,8 +56,8 @@
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>Frontend Develpor</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, ipsa sunt aut labore modi ad quibusdam distinctio corporis in. Quas commodi ipsa corrupti distinctio. Asperiores error blanditiis sequi expedita eum fugit commodi odio ipsa, dolorem sapiente vero aliquam nostrum aut.</p>
-            <a href="#" class="btn">Read More</a>
+            <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, ipsa sunt aut labore modi ad quibusdam distinctio corporis in. Quas commodi ipsa corrupti distinctio. Asperiores error blanditiis sequi expedita eum fugit commodi odio ipsa, dolorem sapiente vero aliquam nostrum aut.</p>
+            <a href="#" class="btn dwn-btn">Read More</a>
         </div>
     </section>
 
@@ -163,15 +163,15 @@
 
         <form action="#">
             <div class="input-box">
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email Address">
+                <input type="text" id="fullName" placeholder="Full Name" autocomplete="off">
+                <input type="email" id="email" placeholder="Your Email Address" autocomplete="off">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="number" id="phone" placeholder="Phone Number" autocomplete="off">
+                <input type="text" id="subject" placeholder="Email Subject" autocomplete="off">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Messege"></textarea>
-            <input class="btn" type="submit" value="Send Messege">
+            <textarea id="emailMessage" cols="30" rows="10" placeholder="Your Message" autocomplete="off"></textarea>
+            <input class="btn" id="submit" type="submit" value="Send Message">
         </form>
     </section> 
 
@@ -194,6 +194,12 @@
 
      <script src="https://unpkg.com/scrollreveal"></script>
      
+     <!-- smtp for mail JS -->
+     
+     <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+     <!-- success alert for mail JS -->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
      <!-- Custom JS -->
 
       <script src="script.js"></script>
