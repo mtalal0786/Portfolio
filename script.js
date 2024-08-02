@@ -65,3 +65,47 @@ const typed = new Typed('.multiple-text', {
     loop: true
 
 });
+
+const form = document.querySelector('form');
+const fullName = document.getElementById('fullName');
+const email = document.getElementById('email');
+const phone = document.getElementById('phone');
+const subject = document.getElementById('subject');
+const emailMessage = document.getElementById('emailMessage');
+
+function sendEmail() {
+    const bodyMessage = `Full Name: ${fullName.value}<br>Email: ${email.value}<br>Phone Number: ${phone.value}<br>Message: ${emailMessage.value}`;
+
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "talalshahbaz000786@gmail.com",
+        Password: "AF6B6E07401A0D24967493D74F8E6B1ECF7A",
+        To: 'talalshahbaz000786@gmail.com',
+        From: email.value,
+        Subject: subject.value,
+        Body: bodyMessage
+    }).then(
+        message => {
+            if (message === "OK") {
+                Swal.fire({
+                    title: "Success!",
+                    text: "Message sent successfully!",
+                    icon: "success"
+                });
+            } else {
+                alert("Failed to send email: " + message);
+            }
+        }
+    );
+}
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    sendEmail();
+    form.reset();
+});
+
+
+
+
+
